@@ -9,13 +9,23 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-markdown-resume.helloWorld",
-        "title": "Hello World"
+        "command": "vscode-markdown-resume.createNew",
+        "title": "Markdown Resume: Create New Resume"
+      },
+      {
+        "command": "vscode-markdown-resume.preview",
+        "title": "Markdown Resume: Preview Resume"
+      },
+      {
+        "command": "vscode-markdown-resume.createPdf",
+        "title": "Markdown Resume: Create PDF"
       }
     ]
   },
